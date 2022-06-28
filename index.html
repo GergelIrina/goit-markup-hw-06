@@ -58,7 +58,7 @@
             <section class="hero">
                 <div class="container">
                 <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <button data-modal-open class="button primary" name="button">Заказать услугу</button>
+                <button data-modal-open class="button-primary button" name="button">Заказать услугу</button>
                 </div>
             </section>
         </div>
@@ -359,13 +359,24 @@
 
         </div>
         <div class="footer-submit">
-            <strong class="footer-submit__text">Подпишитесь на рассылку</strong>
-            <div class="footer-submit__form">
-              <label class="footer-submit__label" for="submit-mail"></label>
-              <input class="footer-submit__input" type="email" name="submit-mail" id="submit-mail" placeholder="E-mail">
-              <button class="footer-submit__btn" type="submit">Подписаться</button>
-            </div>
-        </div>
+            <p class="footer-submit__text">Подпишитесь на рассылку</p>
+            <form class="footer-submit__form">
+              <label class="footer-submit__label">
+                <input
+                  type="email"
+                  name="email"
+                  class="footer-submit__input"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button type="submit" class="footer-submit__btn button">
+                Подписаться
+                <svg class="button-submit__icon">
+                  <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -375,9 +386,7 @@
                     <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
-            <div class="form-ttl">
             <strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
-            </div>
             <form class="form">
                 <div class="form-field top-title">
                     <label class="form-label" for="name">Имя</label>
@@ -413,7 +422,7 @@
                     </label>
                 </div>
 
-                <button class="form-btn" type="submit">Отправить</button>
+                <button class="form-btn button" type="submit">Отправить</button>
             </form>
         </div>
     </div>

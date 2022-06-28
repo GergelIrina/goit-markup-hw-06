@@ -262,13 +262,24 @@
 
         </div>
         <div class="footer-submit">
-            <strong class="footer-submit__text">Подпишитесь на рассылку</strong>
-            <div class="footer-submit__form">
-              <label class="footer-submit__label" for="submit-mail"></label>
-              <input class="footer-submit__input" type="email" name="submit-mail" id="submit-mail" placeholder="E-mail">
-              <button class="footer-submit__btn" type="submit">Подписаться</button>
-            </div>
-        </div>
+            <p class="footer-submit__text">Подпишитесь на рассылку</p>
+            <form class="footer-submit__form">
+              <label class="footer-submit__label">
+                <input
+                  type="email"
+                  name="email"
+                  class="footer-submit__input"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button type="submit" class="footer-submit__btn button">
+                Подписаться
+                <svg class="button-submit__icon">
+                  <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
     </footer>
     <script src="./js/modal.js"></script>
